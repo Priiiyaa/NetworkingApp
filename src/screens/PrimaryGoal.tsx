@@ -43,7 +43,7 @@ const PrimaryGoal = () => {
         />
         <TouchableOpacity
           style={[styles.continueButton, selected === null && styles.continueDisabled]}
-          onPress={() => router.push('/topic')}
+          onPress={() => router.push('/personality-traits')}
           disabled={selected === null}
         >
           <Text style={styles.continueText}>Continue →</Text>
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.white,
   },
   title: {
-    fontSize: 28,
+     fontSize: 20,
     fontWeight: '700',
     color: COLORS.black,
     marginBottom: 18,

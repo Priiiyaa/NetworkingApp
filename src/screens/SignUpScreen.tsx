@@ -42,7 +42,7 @@ export default function SignUpScreen() {
         createdAt: serverTimestamp(),
         onboardingComplete: false,
       });
-      router.replace('/professional-identity');
+      router.replace('/');
     } catch (error: any) {
       const message =
         error.code === 'auth/email-already-in-use'

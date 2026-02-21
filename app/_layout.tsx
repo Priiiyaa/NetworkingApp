@@ -31,9 +31,11 @@ export default function RootLayout() {
       <Stack.Screen name="sign-up" options={{ headerShown: false }} />
       <Stack.Screen name="professional-identity" options={{ headerShown: false }} />
       <Stack.Screen name="primary-goal" options={{ headerShown: false }} />
+      <Stack.Screen name="personality-traits" options={{ headerShown: false }} />
       <Stack.Screen name="topic" options={{ headerShown: false }} />
       <Stack.Screen name="conversation-style" options={{ headerShown: false }} />
       <Stack.Screen name="join-event" options={{ headerShown: false }} />
+      <Stack.Screen name="qr-scanner" options={{ headerShown: false, presentation: 'fullScreenModal' }} />
       <Stack.Screen name="modal" options={{ presentation: 'modal', headerShown: false }} />
     </Stack>
   );
