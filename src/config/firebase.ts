@@ -17,12 +17,12 @@ declare module 'firebase/auth' {
 import { getReactNativePersistence } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyBcpEflqUP4-3WxUpbreFptvreMNRUGM28',
-  authDomain: 'um-hackathon-networking.firebaseapp.com',
-  projectId: 'um-hackathon-networking',
-  storageBucket: 'um-hackathon-networking.firebasestorage.app',
-  messagingSenderId: '816246361759',
-  appId: '1:816246361759:ios:b00168055803f3ee539caa',
+  apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.EXPO_PUBLIC_FIREBASE_APP_ID,
 };
 
 // Guard against re-initialization on hot reloads
